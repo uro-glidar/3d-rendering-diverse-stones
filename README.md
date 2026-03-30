@@ -55,7 +55,7 @@ These files are compatible with:
 - Interactive model assessment in future simulation platforms
 
 ---
-
+<!--
 ## Citation
 
 If you use these models in your research, please cite:
@@ -72,4 +72,4 @@ If you use these models in your research, please cite:
 
 ## Contact
 
-For queries regarding the dataset, please contact [your email or GitHub handle].
+For queries regarding the dataset, please contact [your email or GitHub handle]. -->
