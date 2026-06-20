@@ -55,21 +55,12 @@ These files are compatible with:
 - Interactive model assessment in future simulation platforms
 
 ---
-<!--
+
 ## Citation
 
 If you use these models in your research, please cite:
 
-> [Your citation here — author(s), title, journal, year, DOI]
+Pérez, K.C., Porto, J.G., Civetta, L. et al. A validated custom pipeline for three-dimensional kidney stone renderings tocreate an open access repository. Urolithiasis 54, 117 (2026). https://doi.org/10.1007/s00240-026-02019-9
 
 ---
 
-## License
-
-[Specify license here — e.g. CC BY 4.0, MIT, etc.]
-
----
-
-## Contact
-
-For queries regarding the dataset, please contact [your email or GitHub handle]. -->
