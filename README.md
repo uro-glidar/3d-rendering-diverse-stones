@@ -13,7 +13,7 @@ This repository contains **18 individual kidney stone models** across four chemi
 | Calcium oxalate monohydrate / dihydrate | COM | 8 |
 | Calcium hydrogen phosphate dihydrate (brushite) | CHPD | 3 |
 | Magnesium ammonium phosphate / hydroxyapatite / carbonate apatite | MAPHCA / MAPHDCA | 2 |
-| Uric acid | UA | 5 + U2 |
+| Uric acid | UA | 5 |
 
 A full catalogue of models is provided in [`stone-list.pdf`](./stone-list.pdf) and [`stone-list.docx`](./stone-list.docx).
 
@@ -51,7 +51,6 @@ These files are compatible with:
 - Validation of kidney stone simulation realism (texture and geometry)
 - Development and benchmarking of endourology surgical training simulators
 - Computer vision and machine learning training data for stone recognition
-- 3D printing of patient-specific stone phantoms
 - Interactive model assessment in future simulation platforms
 
 ---
