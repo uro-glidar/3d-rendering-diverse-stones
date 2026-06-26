@@ -30,9 +30,39 @@ Each stone model is provided in **Universal Scene Description (USD)** format —
 | `.material.usd` | Surface material and texture properties |
 | `.layers.usd` | Layer composition and scene hierarchy |
 
+**Texture Dependencies**: All USD material files reference texture maps located in the `dependencies/` folder (96 PNG files: BaseColor, Normal, Roughness, and AmbientOcclusion for each stone). These are **relative paths** and will resolve correctly when the entire repository structure is preserved.
+
 Three **Blender project files** (`.blend`) are also included:
-- `combined-all-stones.blend` — all 18 models in a single scene
+- `combined-all-stones.blend` — all 18 models in a single scene with correct texture linking
 - `combined-com.blend` — COM stones grouped separately
+
+---
+
+## Getting Started
+
+### Prerequisites
+- Clone or download this entire repository (maintaining the directory structure)
+- For USD files: Any USD-compatible viewer
+- For Blender files: Blender 3.0+ with USD support
+
+### Opening Files
+
+**USD Files**: Open any `.usd` file in your preferred USD viewer or 3D application. Textures will load automatically from the relative paths in the `dependencies/` folder.
+
+**Blender Files**: Open `.blend` files directly in Blender. All textures are linked via relative paths and will load automatically (no need to re-link manually).
+
+### Repository Structure
+```
+3d-rendering-diverse-stones/
+├── *.usd                 # Root USD assembly files
+├── *.geo.usd            # Geometry layers
+├── *.material.usd       # Materials with texture references
+├── *.layers.usd         # Layer composition
+├── *.blend              # Blender project files
+├── dependencies/        # Texture maps (PNG files)
+├── README.md            # This file
+└── PATH_FIXES.md        # Technical notes on texture path fixes
+```
 
 ---
 
@@ -56,11 +86,22 @@ These files are compatible with:
 
 ---
 
+## Technical Notes
+
+**Texture Paths**: All texture references use relative paths from the repository root. This ensures that:
+- Files work consistently across different machines and operating systems
+- No hardcoded paths break when the repo is moved or shared
+- Blender files automatically find textures without manual relinking
+
+For detailed technical information about texture path organization and troubleshooting, see [`PATH_FIXES.md`](./PATH_FIXES.md).
+
+---
+
 ## Citation
 
 If you use these models in your research, please cite:
 
-Pérez, K.C., Porto, J.G., Civetta, L. et al. A validated custom pipeline for three-dimensional kidney stone renderings tocreate an open access repository. Urolithiasis 54, 117 (2026). https://doi.org/10.1007/s00240-026-02019-9
+Pérez, K.C., Porto, J.G., Civetta, L. et al. A validated custom pipeline for three-dimensional kidney stone renderings to create an open access repository. Urolithiasis 54, 117 (2026). https://doi.org/10.1007/s00240-026-02019-9
 
 ---
 
